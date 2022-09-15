@@ -1,16 +1,142 @@
 .App {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   padding: 40px;
   margin: 40px;
+  overflow: hidden;
 }
 
 .BlogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 4px solid cornflowerblue;
+  height: 800px;
+  width: 400px;
 }
 
 .Header {
   background-color: darkblue;
   color: white;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.HeaderTitle {
+  margin-left: 30px;
+  font-weight: bolder;
+}
+
+.CropContainer {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.ProfileImg {
+  height: 30px;
+}
+
+.PageTitle {
+  margin: 40px;
+  font-weight: bolder;
+  color: mediumblue;
+}
+
+.InputTitle {
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.TextInputs {
+  background-color: lightgrey;
+  border-radius: 25px;
+  width: 200px;
+  height: 18px;
+  margin-bottom: 30px;
+  padding: 4px;
+  padding-left: 8px;
+}
+
+.BlogButton {
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.Mssg {
+  margin-bottom: 10px;
+  color: red;
+  font-weight: bolder;
+}
+
+.NewBlog {
+  background-color: lightgrey;
+  border-radius: 10px;
+  width: 200px;
+  height: 56px;
+  margin-bottom: 30px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.BlogPostContainer {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.BlogPostUserNameArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.BlogUserName {
+  font-weight: bolder;
+  font-size: small;
+}
+
+.BlogPostText {
+  margin-top: 8px;
+  font-size: small;
+  align-self: start;
+  justify-self: left;
+  margin-bottom: 10px;
+}
+
+.BlogPostsScroll {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.DeletePostButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.WriteBlog {
+  display: flex;
+  flex-direction: column;
 }
