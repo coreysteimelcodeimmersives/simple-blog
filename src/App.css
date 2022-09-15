@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  margin: 40px;
+}
+
+.BlogContainer {
+  border: 4px solid cornflowerblue;
+}
+
+.Header {
+  background-color: darkblue;
+  color: white;
+}
