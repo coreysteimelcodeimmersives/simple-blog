@@ -7,6 +7,10 @@ const BlogPostView = ({
   blogsArr,
   setBlogsArr,
 }) => {
+  const onDelete = (blogsArr, blogIdToDelte) => () => {
+    const copyBlogsArr = blogsArr.filter((post) => post.id !== blogIdToDelte);
+    setBlogsArr(copyBlogsArr);
+  };
   return (
     <>
       <div className="BlogPostContainer">
@@ -18,20 +22,7 @@ const BlogPostView = ({
         </div>
         <div className="BlogPostText">{blog.blog}</div>
         <div className="DeletePostButtonContainer">
-          <button
-            className="BlogButton"
-            onClick={() => {
-              console.log("delete");
-              console.log("blog id to delete ", blog.id);
-              const copyBlogsArr = blogsArr.filter((post) => {
-                if (post.id !== blog.id) {
-                  return post;
-                }
-                return false;
-              });
-              setBlogsArr(copyBlogsArr);
-            }}
-          >
+          <button className="BlogButton" onClick={onDelete(blogsArr, blog.id)}>
             Delete Post
           </button>
         </div>
